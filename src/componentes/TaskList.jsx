@@ -16,6 +16,7 @@ function TaskList(props) {
             item.existe = false
         }})]
         )
+        
     }
 
     function feitoMaisUm(tutu){

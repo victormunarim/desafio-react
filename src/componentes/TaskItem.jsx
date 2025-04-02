@@ -6,7 +6,7 @@ function TaskItem(props) {
         props.marcado(props.tarefa)
     }
 
-    function feito(){
+    function feito(event){
         props.feitoMaisUm(props.tarefa)
     }
 
