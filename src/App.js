@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function App() {
 
-  const [tarefasTemporario, setTarefasTemporario] = useState('')
+  const [tarefasTemporario, setTarefasTemporario] = useState(null)
   const [tarefas, setTarefas] = useState([])
 
   function adicionarTarefa(event) {

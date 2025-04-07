@@ -3,14 +3,14 @@ import { useState } from 'react'
 
 function TaskItem(props) {
 
-    const [done, setDone] = useState(false)
+    // const [done, setDone] = useState(false)
 
     function alterar() {
         props.marcado(props.tarefa)
     }
 
     function feito() {
-        setDone(true);
+        // setDone(true);
         props.feitoMaisUm(props.tarefa)
     }
     
@@ -23,7 +23,7 @@ function TaskItem(props) {
             <div className='tarefa'>
                 <input type='checkbox' onClick={alterar}></input>
                 <label>DELETAR</label>
-                <input type='checkbox' checked={done} onChange={feito}></input>
+                <input type='checkbox' onChange={feito}></input>
                 <label>FEITO</label>
             </div>
         </div>
