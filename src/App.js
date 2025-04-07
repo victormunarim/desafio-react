@@ -12,22 +12,24 @@ function App() {
   }
 
   function enviar() {
-    setTarefas([...tarefas, {task: tarefasTemporario, existe: true, feito: false}])
+    setTarefas([...tarefas, { task: tarefasTemporario, existe: true, feito: false }])
   }
 
   return (
     <div className="App">
       <div className='entrada'>
-      <label>Tarefa:</label>
-      <input
-        type='text'
-        placeholder='Escreva a tarefa'
-        onChange={adicionarTarefa}
-      ></input>
-      <input type='submit' onClick={enviar}></input>
+        <label>Tarefa:</label>
+        <input
+          className='input'
+          type='text'
+          placeholder='Escreva a tarefa'
+          onChange={adicionarTarefa}
+          required
+        ></input>
+        <input className='botao' type='submit' onClick={tarefasTemporario != null ? enviar : null}></input>
       </div>
       <div className='saida'>
-      <TaskList tarefas={tarefas} />
+        <TaskList tarefas={tarefas} />
       </div>
     </div>
   );
