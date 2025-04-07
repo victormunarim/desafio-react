@@ -13,6 +13,7 @@ function App() {
 
   function enviar() {
     setTarefas([...tarefas, { task: tarefasTemporario, existe: true, feito: false }])
+    setTarefasTemporario(null)
   }
 
   return (
