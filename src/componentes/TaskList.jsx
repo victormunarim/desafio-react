@@ -36,7 +36,9 @@ function TaskList(props) {
                     } else return null
                 }
                 )}
-                {numFeitos}
+                <div className='feitos'>
+                <p>Feitos: {numFeitos}</p>
+                </div>
         </div>
     )
 }

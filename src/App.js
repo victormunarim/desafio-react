@@ -17,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className='entrada'>
       <label>Tarefa:</label>
       <input
         type='text'
@@ -24,7 +25,10 @@ function App() {
         onChange={adicionarTarefa}
       ></input>
       <input type='submit' onClick={enviar}></input>
+      </div>
+      <div className='saida'>
       <TaskList tarefas={tarefas} />
+      </div>
     </div>
   );
 }
